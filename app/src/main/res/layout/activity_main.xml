@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:id="@+id/drawerlayout1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099ff">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imv_forheadline"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/headline"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="𝑯𝒐𝒕𝒆𝒍 𝑩𝒐𝒌𝒊𝒏𝒈"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imv_forheadline"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"></TextView>
+                <ImageView
+                    android:id="@+id/img_foradminorders"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_foradminadd"
+                    android:src="@drawable/orders"
+                    android:layout_marginEnd="8dp"
+                    ></ImageView>
+                <ImageView
+                    android:id="@+id/img_foradminadd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/round_add_24"
+                    android:layout_marginEnd="8dp"
+                    ></ImageView>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar1"
+            android:padding="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationciew1"
+        app:menu="@menu/formnavigationmenu"
+        app:headerLayout="@layout/fornavigationheader"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"></com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

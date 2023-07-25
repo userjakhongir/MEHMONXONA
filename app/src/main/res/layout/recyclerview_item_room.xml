@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/linearlayout_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/imagview_item"
+                android:src="@drawable/noimage"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"></ImageView>
+            <TextView
+                android:id="@+id/textview_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="103-xona"
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"
+                android:textSize="18dp"></TextView>
+            <TextView
+                android:id="@+id/textview_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="103-xona"
+                android:singleLine="true"
+                android:paddingHorizontal="15dp"
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

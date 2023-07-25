@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegistrActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/travel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:hint="email adress"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/background_foredittext"></EditText>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="password"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/background_foredittext"
+        android:layout_below="@id/edittext_email"
+       ></EditText>
+
+    <TextView
+        android:id="@+id/textview_gotoregistr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_password"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:textColor="#0099ff"
+        android:textSize="15dp"
+        android:text="𝑹𝒐'𝒚𝒙𝒂𝒕𝒅𝒂𝒏 𝒐'𝒕𝒊𝒔𝒉"></TextView>
+    <ProgressBar
+        android:id="@+id/progressbar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/textview_gotoregistr"
+        android:layout_centerHorizontal="true"></ProgressBar>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#0099ff"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="𝑲𝑰𝑹𝑰𝑺𝑯"
+        android:textSize="22dp"
+        android:padding="5dp"
+        android:enabled="true"
+        android:layout_below="@id/progressbar_login"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wavefloor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

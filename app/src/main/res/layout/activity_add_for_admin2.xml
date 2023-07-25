@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddForAdminActivity2"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageview_opengalery"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/noimage"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="15dp"></ImageView>
+
+        <EditText
+            android:id="@+id/edittext_roomname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:hint="Xona raqami"
+            android:textSize="20dp"
+            android:background="@drawable/background_foredittext"></EditText>
+        <EditText
+            android:id="@+id/edittext_roomdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:padding="5dp"
+            android:hint="Xona haqida ma'lumot"
+            android:textSize="20dp"
+            android:background="@drawable/background_foredittext"
+            ></EditText>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/textview_forprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:textSize="25dp"></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_addroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099ff"
+            android:layout_marginHorizontal="10dp"
+            android:text="ADD TO FIREBASE"
+            android:textSize="25dp"
+            android:enabled="false"
+            ></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+
+</ScrollView>

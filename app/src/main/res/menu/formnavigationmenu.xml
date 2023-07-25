@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/allrooms"
+        android:title="@string/allromms"
+        android:icon="@drawable/all"></item>
+    <item android:id="@+id/about_hotel"
+        android:title="𝑴𝒆𝒙𝒎𝒐𝒏𝒙𝒐𝒏𝒂 𝒉𝒂𝒒𝒊𝒅𝒂"
+        android:icon="@drawable/information"></item>
+    <item android:id="@+id/room_booking"
+        android:title="𝑻𝒂𝒓𝒊𝒙"
+        android:icon="@drawable/history"></item>
+    <item android:id="@+id/setting"
+        android:title="𝑺𝒐𝒛𝒍𝒂𝒎𝒂𝒓"
+        android:icon="@drawable/round_settings_24"></item>
+    <item android:id="@+id/logout"
+        android:title="𝑳𝒐𝒈 𝒐𝒖𝒕"
+        android:icon="@drawable/logout"></item>
+
+</menu>
