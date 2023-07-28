@@ -26,7 +26,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:hint="email adress"
-        android:padding="5dp"
+        android:padding="18dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"></EditText>
 
@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:hint="password"
-        android:padding="5dp"
+        android:padding="18dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"
         android:layout_below="@id/edittext_email"

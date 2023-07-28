@@ -5,26 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.RegistrActivity">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
         android:src="@drawable/traveling"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/edittext_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="50dp"
+
         android:layout_marginEnd="10dp"
         android:hint="ism"
-        android:padding="5dp"
+        android:padding="15dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"></EditText>
     <EditText
@@ -36,7 +40,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
         android:hint="familiya"
-        android:padding="5dp"
+        android:padding="15dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"></EditText>
     <EditText
@@ -48,7 +52,7 @@
         android:layout_marginEnd="10dp"
         android:layout_below="@+id/edittext_surname"
         android:hint="telefon raqam"
-        android:padding="5dp"
+        android:padding="15dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"></EditText>
 
@@ -61,7 +65,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
         android:hint="email adress"
-        android:padding="5dp"
+        android:padding="15dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"></EditText>
 
@@ -73,7 +77,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:hint="password"
-        android:padding="5dp"
+        android:padding="15dp"
         android:textSize="20dp"
         android:background="@drawable/background_foredittext"
         android:layout_below="@id/edittext_email"
@@ -86,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#0099ff"
+        android:background="@drawable/btn_background"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"
         android:text="𝑹𝑶'𝒀𝑿𝑨𝑻𝑫𝑨𝑵 𝑶'𝑻𝑰𝑺𝑯"
